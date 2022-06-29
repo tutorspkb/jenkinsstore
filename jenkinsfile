@@ -1,0 +1,30 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'date'
+                echo "My Build Stage is Executing...."
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'date'
+                echo "My Test Stage is Executing...."
+                     }
+                  }
+        stage('Deploy') {
+            steps {
+                sh 'date'
+                echo "My Deploy Stage is Executing...."
+                }
+            }
+        stage('Release') {
+            steps {
+                sh 'date'
+                echo "My Release Stage is Executing...."
+                }
+          }
+    }
+}
